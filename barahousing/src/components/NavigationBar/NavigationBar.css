@@ -1,0 +1,37 @@
+/* NavigationBar.css */
+
+nav {
+  background-color: #918F6E;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display the list items horizontally */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #C93641;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Change to column layout on smaller screens */
+  }
+  
+  nav ul li {
+    display: block;
+  }
+}
